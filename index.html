@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Calculator</title>
+
+<style>
+	h1 {
+		font-family: Verdana  ;
+		letter-spacing: 16px;
+	}
+
+			#brand {
+			height: 50px;
+			width: 50px;
+		}
+
+		.nav-link{
+			color: black;
+			font-size: 60px;
+			font-family: veranda;
+			letter-spacing: 30px;
+		}
+
+
+		#topnav{
+			width: 50%;
+		}
+
+		.navbar{
+			padding: 0;
+			font-family: Helvetica;
+			font-size: 30px;
+			text-decoration: none;
+		}
+
+		nav{
+			height: 50px;
+			width: 1300px;
+		}
+
+		ul {
+  		list-style-type: none;
+		}
+
+		#colorname{
+			text-decoration: none;
+			font-size: 32px;
+		}
+
+		body {
+			background-color: #FAF5EF;
+		}
+
+		hr {
+ 			 border: none;
+  			 height: 1px;
+  			 background-color: black;
+			}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md" style="background-color: white;">
+<a class="navbar-brand" href="#"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSIsD-brOUd0-ZP5MdEsC2RW4bOik0HeW5SZT2JYUQqQ&s id="brand"></a>
+
+
+<div id="topnav">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="https://www.google.com/search?q=calculator&rlz=1C1AVFC_enPH903PH903&oq=calcula&gs_lcrp=EgZjaHJvbWUqEggAEAAYQxiDARixAxiABBiKBTISCAAQABhDGIMBGLEDGIAEGIoFMgYIARBFGDkyDAgCEAAYQxiABBiKBTINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDINCAUQABiDARixAxiABDIKCAYQABixAxiABDIGCAcQRRg90gEIMTkwMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" id="colorname">Calculator</a>
+		</li>
+	</ul>
+</div>
+</nav>
+
+<br><br>
+<center>
+	<div class="col-md-6" id="box">
+		<form class="form-group">
+			<label>Enter the 1st Number</label>
+				<input type="number" class="form-control btn-sm"  id="num1">
+<br>
+			<label>Enter the 2nd Number</label>
+				<input type="number" class="form-control btn-sm" id="num2">
+<br>
+			<button class="btn btn-success" onclick="Add()"> Add </button>
+			<button class="btn btn-danger" onclick="Subtract()"> Subtract </button>
+			<button class="btn btn-primary" onclick="Multiply()"> Multiply </button>
+			<button class="btn btn-warning" onclick="Divide()"> Divide </button>
+		</form>
+	</div>
+</center>
+
+<script type="text/javascript">
+
+	function Add(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var sum = Number(num1) + Number(num2);
+
+		window.alert('The sum of the two numbers is:' + sum);
+	}
+
+	function Subtract(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var difference = Number(num1) - Number(num2);
+
+		window.alert('The sum of the two numbers is:' + difference);
+	}
+
+	function Multiply(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var product = Number(num1) * Number(num2);
+
+		window.alert('The sum of the two numbers is:' + product);
+	}
+
+	function Divide(){
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		var quotient = Number(num1) / Number(num2);
+
+		window.alert('The sum of the two numbers is:' + quotient);
+	}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
